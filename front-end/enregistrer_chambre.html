@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enregistrer chambre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+              crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+    <style>@import url("css/enregistrer_chambre.css");</style>
+
+    <div class="container-fluid" id="container-fluid">
+
+        <div class="row">
+            <article class="col-md">
+                <div class="cadre">
+                    <a href="" class="cadre-lien-image" id="link_enregistrer_chambre">
+                        <p>Enregistrer chambre</p>
+                        <img src="images/ic-ajout.png" alt="">
+                    </a>
+                </div>
+            </article>
+
+            <article class="col-md">
+                <div class="cadre">
+                    <a href="" class="cadre-lien-image" id="link_enregistrer_etudiant">
+                        <p>Enregistrer etudiant</p>
+                        <img src="images/ic-ajout-active.png" alt="">
+                    </a>
+                </div>
+            </article>
+
+            <article class="col-md">
+                <div class="cadre">
+                    <a href="" class="cadre-lien-image" id="link_gestion_chambre">
+                        <p>Gestion chambre</p>
+                        <img src="images/ic-liste.png" alt="">
+                    </a>
+                </div>
+            </article>
+
+            <article class="col-md">
+                <div class="cadre">
+                    <a href="" class="cadre-lien-image" id="link_gestion_etudiant">
+                        <p>Gestion etudiant</p>
+                        <img src="images/ic-liste-active.png" alt="">
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="container">
+
+            <form method="POST" action="" class="form">
+
+                <div class="form-control">
+                    <label for="numero">Numéro</label>
+                    <input type="text" name="numero" id="numero" placeholder="000-0000">
+                    <small class="error-form" id="error_numero"></small>
+                </div>
+
+                <div class="form-control">
+                    <label for="batiment">Numéro de batiment</label>
+                    <input type="text" name="batiment" id="batiment" placeholder="00">
+                    <small class="error-form" id="error_numero"></small>
+                </div>
+
+                <div class="form-control">
+                    <label for="type">Type</label>
+                        <select name="type" id="type">
+                            <option value="" selected></option>
+                            <option name="individuel" value="individuel" id="individuel">Individuel</option>
+                            <option name="a_deux" value="a_deux" id="a_deux">A deux</option>
+                        </select>
+                </div>
+
+                <div class="form-control">
+                    <button type="submit" name="enregistrer" id="enregistrer" class="btn btn-primary">Enregistrer</button>
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
