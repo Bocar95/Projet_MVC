@@ -1,62 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Enregistrer chambre</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-              crossorigin="anonymous">
-    </script>
-</head>
-<body>
+<style>@import url("<?=BASE_URL?>/public/css/enregistrer_etudiant.css");</style>
 
-    <style>@import url("css/enregistrer_etudiant.css");</style>
 
-    <div class="container-fluid" id="container-fluid">
-
-        <div class="row">
-            <article class="col-md">
-                <div class="cadre">
-                    <a href="" class="cadre-lien-image" id="link_enregistrer_chambre">
-                        <p>Enregistrer chambre</p>
-                        <img src="images/ic-ajout.png" alt="">
-                    </a>
-                </div>
-            </article>
-
-            <article class="col-md">
-                <div class="cadre">
-                    <a href="" class="cadre-lien-image" id="link_enregistrer_etudiant">
-                        <p>Enregistrer etudiant</p>
-                        <img src="images/ic-ajout-active.png" alt="">
-                    </a>
-                </div>
-            </article>
-
-            <article class="col-md">
-                <div class="cadre">
-                    <a href="" class="cadre-lien-image" id="link_gestion_chambre">
-                        <p>Gestion chambre</p>
-                        <img src="images/ic-liste.png" alt="">
-                    </a>
-                </div>
-            </article>
-
-            <article class="col-md">
-                <div class="cadre">
-                    <a href="" class="cadre-lien-image" id="link_gestion_etudiant">
-                        <p>Gestion etudiant</p>
-                        <img src="images/ic-liste-active.png" alt="">
-                    </a>
-                </div>
-            </article>
-        </div>
-
-        <div class="container">
-
-            <form method="POST" action="" class="form">
+<form method="POST" action="" class="form">
             
                 <article class="col-md">
 
@@ -115,10 +60,101 @@
                 </article>
             </form>
 
-        </div>
+            <style>
 
-    </div>
 
-    
-</body>
-</html>
+.container {
+    position: relative;
+    background-color: #FFFFFF;
+    margin: 1.5% auto;
+    padding: 0px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background-color: #38CA8D;
+}
+
+.label_input {
+    width: 40%;
+    position: relative;
+    border: none;
+    padding: 0px;
+    margin: 0px auto;
+    background-color: #38CA8D;
+}
+
+.label_input label{
+    display: block;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label_input input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: gray;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+}
+
+.label_input select{
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    text-align: center;
+    color: gray;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+}
+
+.zone_affichage {
+    position: relative;
+    width: 50%;
+    height: 150px;
+    background-color: #FFFFFF;
+    margin: 0px auto;
+    border: 2px solid black;
+    background-color: #38CA8D;
+}
+
+.label_input button{
+    position: relative;
+    width: 100%;
+    margin: 4% 0px 4%;
+    margin: 0x auto;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.error-form {
+    color: red;
+    margin-bottom: 0px;
+}
+
+/* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */
+
+.cadre:hover {
+    border-left: 7px solid #045c1e;
+    background-color: #689AE7;
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+            </style>

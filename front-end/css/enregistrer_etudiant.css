@@ -107,6 +107,8 @@ body {
     height: 150px;
     background-color: #FFFFFF;
     margin: 0px auto;
+    border: 2px solid black;
+    background-color: #38CA8D;
 }
 
 .label_input button{

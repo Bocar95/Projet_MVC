@@ -1,61 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Gestion Chambre</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-              crossorigin="anonymous">
-    </script>
-</head>
-<body>
-
-    <style>@import url("css/gestion_chambre.css");</style>
-
-    <div class="container-fluid" id="container-fluid">
-
-        <div class="row">
-            <article class="col-md">
-                <div class="cadre">
-                    <a href="" class="cadre-lien-image" id="link_enregistrer_chambre">
-                        <p>Enregistrer chambre</p>
-                        <img src="images/ic-ajout.png" alt="">
-                    </a>
-                </div>
-            </article>
-
-            <article class="col-md">
-                <div class="cadre">
-                    <a href="" class="cadre-lien-image" id="link_enregistrer_etudiant">
-                        <p>Enregistrer etudiant</p>
-                        <img src="images/ic-ajout-active.png" alt="">
-                    </a>
-                </div>
-            </article>
-
-            <article class="col-md">
-                <div class="cadre">
-                    <a href="" class="cadre-lien-image" id="link_gestion_chambre">
-                        <p>Gestion chambre</p>
-                        <img src="images/ic-liste.png" alt="">
-                    </a>
-                </div>
-            </article>
-
-            <article class="col-md">
-                <div class="cadre">
-                    <a href="" class="cadre-lien-image" id="link_gestion_etudiant">
-                        <p>Gestion etudiant</p>
-                        <img src="images/ic-liste-active.png" alt="">
-                    </a>
-                </div>
-            </article>
-        </div>
-
-        <div class="container">
-
+<style>@import url("<?=BASE_URL?>/public/css/gestion_chambre.css");</style>             
+                
                 <table class="table table-striped">
                     <thead>
                         <tr class="text-center">
@@ -119,11 +63,3 @@
                 </table>
 
                 <button type="submit" name="suivant" id="suivant" class="btn btn-primary">Suivant</button>
-
-        </div>
-
-    </div>
-
-    
-</body>
-</html>

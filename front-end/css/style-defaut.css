@@ -1,0 +1,10 @@
+#scrollZone{
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.text-center {
+    position: relative;
+    background-color: #38CA8D;
+    width: 100%;
+}
