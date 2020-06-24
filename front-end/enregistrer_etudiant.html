@@ -58,38 +58,38 @@
 
             <form method="POST" action="" class="form">
             
-                <article class="col-6">
-                    <div class="form-control">
+                <article class="col-md">
+                    <div class="label_input">
                         <label for="matricule">Matricule</label>
                         <input type="text" name="matricule" id="matricule" placeholder="ANNEECCLL0000">
                         <small class="error-form" id="error_numero"></small>
                     </div>
 
-                    <div class="form-control">
+                    <div class="label_input">
                         <label for="prenom">Prenom</label>
                         <input type="text" name="prenom" id="prenom" placeholder="Saisir votre prénom">
                         <small class="error-form" id="error_prenom"></small>
                     </div>
 
-                    <div class="form-control">
+                    <div class="label_input">
                         <label for="nom">Nom</label>
                         <input type="text" name="nom" id="nom" placeholder="Saisir votre nom">
                         <small class="error-form" id="error_nom"></small>
                     </div>
 
-                    <div class="form-control">
+                    <div class="label_input">
                         <label for="mail">Mail</label>
                         <input type="text" name="mail" id="mail" placeholder="****@gmail.com">
                         <small class="error-form" id="error_numero"></small>
                     </div>
 
-                    <div class="form-control">
+                    <div class="label_input">
                         <label for="telephone">Téléphone</label>
                         <input type="text" name="telephone" id="telephone" placeholder="Saisir le numéro de téléphone">
                         <small class="error-form" id="error_nom"></small>
                     </div>
 
-                    <div class="form-control">
+                    <div class="label_input">
                         <label for="date">Date de Naissance</label>
                         <input type="date" name="date" id="date" placeholder="Saisir la date de naissance">
                         <small class="error-form" id="error_nom"></small>
@@ -97,9 +97,9 @@
 
                 </article>
 
-                <article class="col-6">
+                <article class="col-md">
 
-                    <div class="form-control">
+                    <div class="label_input">
                         <label for="type">Type</label>
                             <select name="type" id="type">
                                 <option value="" selected></option>
@@ -110,10 +110,12 @@
                     </div>
 
                     <div class="zone_affichage" id="zone_affichage">
-                        <!--ON GENERE LES CHAMPS DE REPONSE ICI-->
+                        <!--ON GENERE LES CHAMPS ICI (dans la zone blanche)-->
                     </div>
 
-                    <button type="submit" name="enregistrer" id="enregistrer" class="btn btn-primary">Enregistrer</button>
+                    <div class="label_input">
+                        <button type="submit" name="enregistrer" id="enregistrer" class="btn btn-primary">Enregistrer</button>
+                    </div>
 
                 </article>
             </form>
