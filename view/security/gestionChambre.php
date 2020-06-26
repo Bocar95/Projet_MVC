@@ -11,55 +11,31 @@
                         </tr>
                     </thead>
                     <tbody id="tbody">
-                        <tr class="text-center">
-                            <td>000-0000</td>
-                            <td>00</td>
-                            <td>Individuel</td>
-                            <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
-                        </tr>
 
-                        <tr class="text-center">
-                            <td>000-0000</td>
-                            <td>00</td>
-                            <td>Individuel</td>
-                            <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
-                        </tr>
+                        <?php
+                            foreach (@$chambre as $key=>$value){
+                        ?>
 
-                        <tr class="text-center">
-                            <td>000-0000</td>
-                            <td>00</td>
-                            <td>Individuel</td>
-                            <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
-                        </tr>
+                                <tr class="text-center">
+                                    <td><?= $value->getnumCham(); ?></td>
+                                    <td><?= $value->getNumDep(); ?></td>
+                                    <td><?= $value->getType(); ?></td>
+                                    <td>Modifier</td>
+                                    <td><input type="hidden" value="<?=$value->getidCham();?>">
+                                        <img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
+                                </tr>
 
-                        <tr class="text-center">
-                            <td>000-0000</td>
-                            <td>00</td>
-                            <td>Individuel</td>
-                            <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
-                        </tr>
+                            <?php
+                            }
+                            ?>
 
-                        <tr class="text-center">
-                            <td>000-0000</td>
-                            <td>00</td>
-                            <td>Individuel</td>
-                            <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
-                        </tr>
-
-                        <tr class="text-center">
-                            <td>000-0000</td>
-                            <td>00</td>
-                            <td>Individuel</td>
-                            <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
-                        </tr>
+                        
 
                     </tbody>
                 </table>
 
                 <button type="submit" name="suivant" id="suivant" class="btn btn-primary">Suivant</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="<?=BASE_URL?>/public/js/jquery.js"></script>
+    <script src="<?=BASE_URL?>/public/js/chambre.js"></script>

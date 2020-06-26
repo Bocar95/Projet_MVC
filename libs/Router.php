@@ -1,5 +1,4 @@
 <?php
-
 class Router{
     
  private $ctrl;
@@ -45,10 +44,14 @@ class Router{
                         }*/
                         
                     }else{
-                        $pathCtrl="./controllers/ErreurController.php";
+                        $pathCtrl="./controllers/SecurityController.php";
+                        require_once($pathCtrl);
+                        $this->ctrl=new SecurityController();
+                        $this->ctrl->index();
+                        /*$pathCtrl="./controllers/ErreurController.php";
                         require_once($pathCtrl);
                         $erreurCtrl=new ErreurController();
-                        $erreurCtrl->showError("Ce controller n'existe Pas");
+                        $erreurCtrl->showError("Ce controller n'existe Pas");*/
                     }
              }else{
                 $pathCtrl="./controllers/SecurityController.php";

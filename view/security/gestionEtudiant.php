@@ -3,7 +3,12 @@
         <article class="col-md">
             <div class="rechercher">
                 <label for="rechercher" class="rechercher_label">Rechercher</label>
-                <input type="search" name="rechercher" id="rechercher" class="rechercher_input" placeholder="Saisir le matricule, le type de bourse ou le département.">
+                <select name="type" id="type">
+                    <option value="" selected></option>
+                    <option name="matricule" value="matricule" id="matricule">Matricule</option>
+                    <option name="bourse" value="bouse" id="bourse">Boursier</option>
+                    <option name="departement" value="departement" id="departement">Département</option>
+                </select>
             </div>
         </article>
 
@@ -24,56 +29,42 @@
                             <td>étudiant 1</td>
                             <td>000-0000</td>
                             <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
                             <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
                             <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
                             <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
                             <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
                             <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>étudiant 1</td>
-                            <td>étudiant 1</td>
-                            <td>000-0000</td>
-                            <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>étudiant 1</td>
-                            <td>étudiant 1</td>
-                            <td>000-0000</td>
-                            <td>Modifier</td>
-                            <td><img src="images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
                         </tr>
                         
                     </tbody>
