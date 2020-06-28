@@ -18,7 +18,7 @@
         <div class="row">
             <article class="col-md">
                 <div class="cadre">
-                    <a href="enregistrerChambre" class="cadre-lien-image" id="link_enregistrer_chambre">
+                    <a href="<?=BASE_URL;?>/Gestionnaire/AddChambre" class="cadre-lien-image" id="link_enregistrer_chambre">
                         <p>Enregistrer chambre</p>
                         <img src="<?=BASE_URL?>/public/images/ic-ajout.png" alt="">
                     </a>
@@ -27,7 +27,7 @@
 
             <article class="col-md">
                 <div class="cadre">
-                    <a href="enregistrerEtudiant" class="cadre-lien-image" id="link_enregistrer_etudiant">
+                    <a href="<?=BASE_URL;?>/Gestionnaire/AddEtudiant" class="cadre-lien-image" id="link_enregistrer_etudiant">
                         <p>Enregistrer etudiant</p>
                         <img src="<?=BASE_URL?>/public/images/ic-ajout-active.png" alt="">
                     </a>
@@ -36,7 +36,7 @@
 
             <article class="col-md">
                 <div class="cadre">
-                    <a href="gestionChambre" class="cadre-lien-image" id="link_gestion_chambre">
+                    <a href="<?=BASE_URL;?>/Gestionnaire/GestionChambre" class="cadre-lien-image" id="link_gestion_chambre">
                         <p>Gestion chambre</p>
                         <img src="<?=BASE_URL?>/public/images/ic-liste.png" alt="">
                     </a>
@@ -45,7 +45,7 @@
 
             <article class="col-md">
                 <div class="cadre">
-                    <a href="gestionEtudiant" class="cadre-lien-image" id="link_gestion_etudiant">
+                    <a href="<?=BASE_URL;?>/Gestionnaire/GestionEtudiant" class="cadre-lien-image" id="link_gestion_etudiant">
                         <p>Gestion etudiant</p>
                         <img src="<?=BASE_URL?>/public/images/ic-liste-active.png" alt="">
                     </a>

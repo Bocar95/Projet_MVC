@@ -9,9 +9,8 @@ class Controller{
     protected $validator;
 
     public function render(){
-
-        $pathView="./view/".$this->folder."/".$this->view.".php";
-        $pathLayout="./view/layout/".$this->layout.".php";
+        $pathView="./views/".$this->folder."/".$this->view.".php";
+        $pathLayout="./views/layout/".$this->layout.".php";
           ob_start();
              extract($this->data_view);
            require_once($pathView);

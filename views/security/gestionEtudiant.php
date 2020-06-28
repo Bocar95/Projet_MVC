@@ -28,43 +28,43 @@
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
-                            <td>Modifier</td>
-                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><button type="button" class="btn btn-outline-primary"id="mdf" data-toggle="modal" data-target="#myModal">Modify</button></td>
+                            <td><button type="button" class="btn btn-outline-danger" id="supprimer">Delete</button></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
-                            <td>Modifier</td>
-                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><button type="button" class="btn btn-outline-primary"id="mdf" data-toggle="modal" data-target="#myModal">Modify</button></td>
+                            <td><button type="button" class="btn btn-outline-danger" id="supprimer">Delete</button></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
-                            <td>Modifier</td>
-                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><button type="button" class="btn btn-outline-primary"id="mdf" data-toggle="modal" data-target="#myModal">Modify</button></td>
+                            <td><button type="button" class="btn btn-outline-danger" id="supprimer">Delete</button></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
-                            <td>Modifier</td>
-                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><button type="button" class="btn btn-outline-primary"id="mdf" data-toggle="modal" data-target="#myModal">Modify</button></td>
+                            <td><button type="button" class="btn btn-outline-danger" id="supprimer">Delete</button></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
-                            <td>Modifier</td>
-                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><button type="button" class="btn btn-outline-primary"id="mdf" data-toggle="modal" data-target="#myModal">Modify</button></td>
+                            <td><button type="button" class="btn btn-outline-danger" id="supprimer">Delete</button></td>
                         </tr>
                         <tr class="text-center">
                             <td>étudiant 1</td>
                             <td>étudiant 1</td>
                             <td>000-0000</td>
-                            <td>Modifier</td>
-                            <td><img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
+                            <td><button type="button" class="btn btn-outline-primary"id="mdf" data-toggle="modal" data-target="#myModal">Modify</button></td>
+                            <td><button type="button" class="btn btn-outline-danger" id="supprimer">Delete</button></td>
                         </tr>
                         
                     </tbody>

@@ -1,9 +1,8 @@
 <?php
+
 class Router{
     
  private $ctrl;
- //Url => index.php?url=security/index
- //Reecrire URL =>security/index
     function route(){
 
         try{
@@ -23,40 +22,35 @@ class Router{
 
              if(isset($_GET['url'])){
                 $url=explode("/",filter_var($_GET['url'],FILTER_SANITIZE_URL));
-                  //Classe Controller
+                  //Class Controller
                   $ctrl= ucfirst(strtolower($url[0]))."Controller";
                   $pathCtrl="./controllers/".$ctrl.".php";
                     if(file_exists($pathCtrl)){
                         require_once($pathCtrl);
                         //Instancier un Objet Controller
                         $this->ctrl=new $ctrl();
-                        //$action=$url[1];
-                        $this->ctrl-> $ctrl();
-                        /*if(method_exists($this->ctrl, $action)){
+                        $action=$url[1];
+                        if(method_exists($ctrl, $action)){
                           //Action Existe dans le Controller
                            $this->ctrl->{$action}();
                         }else{
                          //Action n'Existe pas dans le Controller
-                          $pathCtrl="./controllers/ErreurController.php";
-                          require_once($pathCtrl);
-                          $erreurCtrl=new ErreurController();
-                          $erreurCtrl->showError("Cette Methode n'existe Pas");
-                        }*/
+                         $pathCtrl="./controllers/GestionnaireController.php";
+                         require_once($pathCtrl);
+                         $this->ctrl=new GestionnaireController();
+                         $this->ctrl->index();
+                        }
                         
                     }else{
-                        $pathCtrl="./controllers/SecurityController.php";
+                        $pathCtrl="./controllers/GestionnaireController.php";
                         require_once($pathCtrl);
-                        $this->ctrl=new SecurityController();
+                        $this->ctrl=new GestionnaireController();
                         $this->ctrl->index();
-                        /*$pathCtrl="./controllers/ErreurController.php";
-                        require_once($pathCtrl);
-                        $erreurCtrl=new ErreurController();
-                        $erreurCtrl->showError("Ce controller n'existe Pas");*/
                     }
              }else{
-                $pathCtrl="./controllers/SecurityController.php";
+                $pathCtrl="./controllers/GestionnaireController.php";
                 require_once($pathCtrl);
-                $this->ctrl=new SecurityController();
+                $this->ctrl=new GestionnaireController();
                 $this->ctrl->index();
              }
              

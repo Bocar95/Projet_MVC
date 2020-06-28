@@ -3,6 +3,7 @@
                 <table class="table table-striped">
                     <thead>
                         <tr class="text-center">
+                            <th style="display: none;">Id</th>
                             <th>Numéro</th>
                             <th>Numéro batiment</th>
                             <th>Type</th>
@@ -15,14 +16,13 @@
                         <?php
                             foreach (@$chambre as $key=>$value){
                         ?>
-
                                 <tr class="text-center">
-                                    <td><?= $value->getnumCham(); ?></td>
+                                    <td style="display: none;"><?= $value->getidCham(); ?></td>
+                                    <td><?= $value->getNumCham(); ?></td>
                                     <td><?= $value->getNumDep(); ?></td>
                                     <td><?= $value->getType(); ?></td>
-                                    <td>Modifier</td>
-                                    <td><input type="hidden" value="<?=$value->getidCham();?>">
-                                        <img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
+                                    <td><button type="button" class="btn btn-outline-primary"id="mdf" data-toggle="modal" data-target="#myModal">Modify</button></td>
+                                    <td><button type="button" class="btn btn-outline-danger" id="supprimer">Delete</button></td>
                                 </tr>
 
                             <?php

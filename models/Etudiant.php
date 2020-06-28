@@ -1,6 +1,6 @@
 <?php
 
-   abstract class Etudiant implements IApplication{
+    abstract class Etudiant implements IApplication{
 
         protected $id;
         protected $matricule;
@@ -23,21 +23,7 @@
 
         }
 
-        public function hydrate($row){
-
-            $this->id= $row['id'];
-            //$this->matricule= $row['matricule'];
-            //$this->nom= $row['nom'];
-            //$this->prenom= $row['prenom'];
-            $this->email= $row['email'];
-            $this->telephone= $row['telephone'];
-            /*$this->dateNais= $row['dateNais'];
-            $this->type= $row['type'];
-            $this->profil= $row['profil'];
-            $this->adresse= $row['adresse'];*/
-
-            
-        }
+        
         
 
 

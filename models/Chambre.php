@@ -2,10 +2,12 @@
 
     class Chambre implements IApplication{
 
-        protected $numCham;
+        protected $numero;
         protected $numDep;
         protected $type;
-        protected $id_chambre;
+        protected $id;
+
+
 
         //Le constructeur
 
@@ -19,16 +21,17 @@
 
         public function hydrate($row){
 
-            $this->numCham= $row['numCham'];
+            $this->numero= $row['numCham'];
             $this->numDep= $row['numDep'];
             $this->type=   $row['type'];
-            $this->id_chambre= $row['id_chambre'];
+            $this->id=   $row['id'];
                
         }
 
         //les getters
-        public function getnumCham(){
-            return $this->numCham;
+
+        public function getNumCham(){
+            return $this->numero;
         }
 
         public function getNumDep(){
@@ -40,23 +43,27 @@
         }
 
         public function getidCham(){
-            return $this->id_chambre;
+            return $this->id;
         }
 
         //les setters
-        public function setnumCham($numCham){
-            $this->numCham=$numCham;
+        public function setNumCham($numero){
+
+            $this->numero=$numero;
         }
 
         public function setNumDep($numDep){
+
             $this->numDep=$numDep;
         }
 
         public function setType($type){
+
             $this->type=$type;
         }
+        public function setidCham($id){
 
-        public function setidCham($id_chambre){
-            $this->id_chambre=$id_chambre;
+            $this->id=$id;
         }
+
     }
