@@ -1,5 +1,5 @@
 // Fonction qui permet de supprimer une chambre
-const BASE_URL="http://localhost/Projet_BB"
+//const BASE_URL="http://localhost/Projet_BB"
 
 $(document).on('click','#supprimer',function () {
     if (confirm("Do you want to delete?")){ // demande une confirmation de suppression

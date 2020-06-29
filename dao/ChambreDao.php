@@ -7,14 +7,24 @@
 
             $this->tableName='chambre';
             $this->className='Chambre';
-            $this->colone='id_chambre';
+            $this->colone='id';
         }
 
         public function getChambre(){
             return $this->findAll();
         }
 
-        public function add($obj){  
+        public function add($obj){
+
+            $numCham = $obj->getNumCham();
+            $numDep = $obj->getNumDep();
+            $type =   $obj->getType();
+
+            $sql = "INSERT INTO chambre(numCham, numDep, type) 
+                    VALUES ('$numCham', '$numDep', '$type')";
+            $data = $this->executeUpdate($sql);
+
+            return $data;
 
         }
 

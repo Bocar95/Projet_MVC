@@ -38,20 +38,20 @@ class Router{
                          $pathCtrl="./controllers/GestionnaireController.php";
                          require_once($pathCtrl);
                          $this->ctrl=new GestionnaireController();
-                         $this->ctrl->index();
+                         $this->ctrl->AddChambre()();
                         }
                         
                     }else{
                         $pathCtrl="./controllers/GestionnaireController.php";
                         require_once($pathCtrl);
                         $this->ctrl=new GestionnaireController();
-                        $this->ctrl->index();
+                        $this->ctrl->AddChambre()();
                     }
              }else{
                 $pathCtrl="./controllers/GestionnaireController.php";
                 require_once($pathCtrl);
                 $this->ctrl=new GestionnaireController();
-                $this->ctrl->index();
+                $this->ctrl->AddChambre();
              }
              
         }catch(Exception $ex){

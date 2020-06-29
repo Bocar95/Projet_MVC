@@ -1,7 +1,7 @@
 <style>@import url("<?=BASE_URL?>/public/css/enregistrer_etudiant.css");</style>
 
 
-<form method="POST" action="" class="form">
+<form method="POST" action="<?=BASE_URL?>/Gestionnaire/AddEtudiant" class="form" id="form">
             
                 <article class="col-md">
 
@@ -20,19 +20,19 @@
                     <div class="label_input">
                         <label for="mail">Mail</label>
                         <input type="text" name="mail" id="mail" placeholder="****@gmail.com">
-                        <small class="error-form" id="error_numero"></small>
+                        <small class="error-form" id="error_mail"></small>
                     </div>
 
                     <div class="label_input">
                         <label for="telephone">Téléphone</label>
                         <input type="text" name="telephone" id="telephone" placeholder="Saisir le numéro de téléphone">
-                        <small class="error-form" id="error_nom"></small>
+                        <small class="error-form" id="error_tel"></small>
                     </div>
 
                     <div class="label_input">
                         <label for="date">Date de Naissance</label>
                         <input type="date" name="date" id="date" placeholder="Saisir la date de naissance">
-                        <small class="error-form" id="error_nom"></small>
+                        <small class="error-form" id="error_date"></small>
                     </div>
 
                 </article>
@@ -47,114 +47,24 @@
                                 <option name="boursier_loger" value="boursier_loger" id="boursier_loger">Boursier logé</option>
                                 <option name="non_boursier" value="non_boursier" id="non_boursier">Non boursier</option>
                             </select>
+                        <small class="error-form" id="error_type"></small>
+                        <div id="generer" class="btn btn-reponse">+</div>
                     </div>
 
+
+
                     <div class="zone_affichage" id="zone_affichage">
-                        <!--ON GENERE LES CHAMPS ICI (dans la zone blanche)-->
+                        <!--ON GENERE LES CHAMPS ICI (dans la zone cadrer en noir)-->
                     </div>
 
                     <div class="label_input">
-                        <button type="submit" name="enregistrer" id="enregistrer" class="btn btn-primary">Enregistrer</button>
+                        <button type="submit" name="btn_save" id="enregistrer" class="btn btn-primary">Enregistrer</button>
                     </div>
 
                 </article>
             </form>
-
-            <style>
-
-
-.container {
-    position: relative;
-    background-color: #FFFFFF;
-    margin: 1.5% auto;
-    padding: 0px;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
-}
-
-.form {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0px auto;
-    background-color: #38CA8D;
-}
-
-.label_input {
-    width: 40%;
-    position: relative;
-    border: none;
-    padding: 0px;
-    margin: 0px auto;
-    background-color: #38CA8D;
-}
-
-.label_input label{
-    display: block;
-    color: black;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.label_input input{
-    width: 100%;
-    height: 30px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: gray;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
-    background-color: #FFFFFF;
-}
-
-.label_input select{
-    width: 100%;
-    height: 30px;
-    padding: 15px;
-    text-align: center;
-    color: gray;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
-    background-color: #FFFFFF;
-}
-
-.zone_affichage {
-    position: relative;
-    width: 50%;
-    height: 150px;
-    background-color: #FFFFFF;
-    margin: 0px auto;
-    border: 2px solid black;
-    background-color: #38CA8D;
-}
-
-.label_input button{
-    position: relative;
-    width: 100%;
-    margin: 4% 0px 4%;
-    margin: 0x auto;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
-}
-
-.error-form {
-    color: red;
-    margin-bottom: 0px;
-}
-
-/* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */
-
-.cadre:hover {
-    border-left: 7px solid #045c1e;
-    background-color: #689AE7;
-    position: relative;
-    width: 100%;
-    text-decoration: none;
-}
-
-
-            </style>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="<?=BASE_URL?>/public/js/jquery.js"></script>
+    <script src="<?=BASE_URL?>/public/js/etudiant.js"></script>
