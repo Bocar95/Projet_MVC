@@ -12,18 +12,18 @@
                     </thead>
 
                     <tbody id="tbody">
-                    <?php
-                    foreach(@$etudiant as $key=>$value){
-                    ?>
-                        <tr class="text-center">
-                            <td><?= $value->getPrenom(); ?></td>
-                            <td><?= $value->getNom(); ?></td>
-                            <td><?= $value->getTelephone(); ?></td>
-                        </tr>
+                        <?php
+                        foreach(@$etudiant as $key=>$value){
+                        ?>
+                            <tr class="text-center">
+                                <td><?= $value->getPrenom(); ?></td>
+                                <td><?= $value->getNom(); ?></td>
+                                <td><?= $value->getTelephone(); ?></td>
+                            </tr>
 
-                    <?php
-                    }
-                    ?>
+                        <?php
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>

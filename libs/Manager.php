@@ -47,7 +47,6 @@
           }
           $this->closeConnexion();
           return $data;
-
       }
 
       public function findAll(){

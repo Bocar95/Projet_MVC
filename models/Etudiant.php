@@ -29,6 +29,7 @@
 
                 if ($row['type']=="boursier_non_loger"){
 
+                    $this->matricule= $row['matricule'];
                     $this->prenom= $row['prenom'];
                     $this->nom= $row['nom'];
                     $this->mail=   $row['mail'];
@@ -41,6 +42,7 @@
 
                 if ($row['type']=="boursier_loger"){
 
+                    $this->matricule= $row['matricule'];
                     $this->prenom= $row['prenom'];
                     $this->nom= $row['nom'];
                     $this->mail=   $row['mail'];
@@ -54,6 +56,7 @@
 
                 if ($row['type']=="non_boursier"){
 
+                    $this->matricule= $row['matricule'];
                     $this->prenom= $row['prenom'];
                     $this->nom= $row['nom'];
                     $this->mail=   $row['mail'];

@@ -23,7 +23,9 @@
 
             $this->numCham= $row['numCham'];
             $this->numDep= $row['numDep'];
-            $this->type=   $row['type'];               
+            $this->type=   $row['type'];
+            $this->id=   $row['id'];           
+
         }
 
         //les getters

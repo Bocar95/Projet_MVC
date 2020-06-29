@@ -24,8 +24,9 @@
             return $this->findAll();
         }
 
-        public function add($obj){  
+        public function add($obj){ 
 
+            $matricule = $obj->getMatricule();
             $prenom = $obj->getPrenom();
             $nom = $obj->getNom();
             $mail =   $obj->getMail();
@@ -36,8 +37,8 @@
             $chambre = $obj->getChambre();
             $adresse =   $obj->getAdresse();
 
-            $sql = "INSERT INTO etudiant(prenom, nom, mail, telephone, date, type, type_bourse, chambre, adresse) 
-                    VALUES ('$prenom', '$nom', '$mail', '$telephone', '$date', '$type', '$type_bourse', '$chambre', '$adresse')";
+            $sql = "INSERT INTO etudiant(matricule, prenom, nom, mail, telephone, date, type, type_bourse, chambre, adresse) 
+                    VALUES ('$matricule', '$prenom', '$nom', '$mail', '$telephone', '$date', '$type', '$type_bourse', '$chambre', '$adresse')";
             $data = $this->executeUpdate($sql);
 
             return $data;

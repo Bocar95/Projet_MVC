@@ -4,13 +4,15 @@
         public  function __construct(){
             $this->folder="security";
             $this->layout="acceuil";
-            $this->dao="ChambreDao";
-            $this->dao="EtudiantDao";
-            $this->validator=new Validator();  
+            $this->validator=new Validator();
         }
 
         public function index(){ 
+            $etudiant= $this->listerEtudiant();
+
             $this->view="defaut";
+            $this->data_view["etudiant"]=$etudiant;
+
             $this->render();
         }
 
@@ -18,6 +20,7 @@
 
         public function AddEtudiant(){
 
+            $this->dao="EtudiantDao";
             $this->view="enregistrerEtudiant";
             $this->render();
 
@@ -29,8 +32,8 @@
                    $this->validator->isVide($prenom, 'prenom', 'Ce champ est obligatoire');
                  }elseif($nom==''){
                    $this->validator->isVide($nom, 'nom', 'Ce champ est obligatoire');
-                 }elseif($tel==''){
-                    $this->validator->isVide($tel, 'tel', 'Ce champ est obligatoire');
+                 }elseif($telephone==''){
+                    $this->validator->isVide($telephone, 'tel', 'Ce champ est obligatoire');
                   }elseif($mail==''){
                     $this->validator->isVide($mail, 'mail', 'Ce champ est obligatoire');
                   }elseif($date==''){
@@ -40,10 +43,10 @@
                   }else{
                      if($this->validator->isValid()){
 
-                         //$matricule= $this->AutomaticMatricule($numDep);
+                         $matricule= $this->AutomaticMatricule($prenom, $nom);
                          if ($type=="boursier_non_loger"){
                             $row = [
-                                //'matricule' => $matricule,
+                                'matricule' => $matricule,
                                 'prenom' => $prenom,
                                 'nom' => $nom,
                                 'telephone' => $telephone,
@@ -56,7 +59,7 @@
 
                         if ($type=="boursier_loger"){
                             $row = [
-                                //'matricule' => $matricule,
+                                'matricule' => $matricule,
                                 'prenom' => $prenom,
                                 'nom' => $nom,
                                 'telephone' => $telephone,
@@ -70,7 +73,7 @@
 
                         if ($type=="non_boursier"){
                             $row = [
-                                //'matricule' => $matricule,
+                                'matricule' => $matricule,
                                 'prenom' => $prenom,
                                 'nom' => $nom,
                                 'telephone' => $telephone,
@@ -101,6 +104,8 @@
         }
 
         public function listerEtudiant(){
+
+            $this->dao="EtudiantDao";
             $this->dao=new EtudiantDao();
             $y= $this->dao->getEtudiant();
             return $y;
@@ -110,7 +115,7 @@
             $etudiant= $this->listerEtudiant();
 
             $this->view="gestionEtudiant";
-            $this->data_view["chambre"]=$etudiant;
+            $this->data_view["etudiant"]=$etudiant;
 
             $this->render();
         }
@@ -120,6 +125,7 @@
 
         public function  AddChambre(){
 
+            $this->dao="ChambreDao";
             $this->view="enregistrerChambre";
             $this->render();
 
@@ -167,6 +173,8 @@
         }
 
         public function listerChambre(){
+
+            $this->dao="ChambreDao";
             $this->dao=new ChambreDao();
             $x= $this->dao->getChambre();
             return $x;
@@ -176,6 +184,7 @@
 
             $id=$_POST["id_chambre"];
             $this->view="gestionChambre";
+            $this->dao="ChambreDao";
             $this->dao=new ChambreDao();
             $this->dao->deleteChambre($id);
 
@@ -207,18 +216,12 @@
         }
 
         //generer automatiqument le matricule
-        public function AutomaticMatricule($numDep){
+        public function AutomaticMatricule($prenom, $nom){
 
-            if(strlen($numDep) == 1){
+            $result1= substr("$prenom", 0, 2);
+            $result2 = substr("$nom", -2);
 
-                $result= '00'.$numDep;
-
-            }elseif(strlen($numDep) == 2){
-
-                $result = '0'.$numDep;
-            }
-
-            return date('Y').$result.'-'.rand(1000, 9999);
+            return strtoupper(date('Y').'-'.$result1.'-'.$result2.'-'.sprintf("%'.04d",rand(0, 9999)));
         }
 
         

@@ -38,20 +38,26 @@ class Router{
                          $pathCtrl="./controllers/GestionnaireController.php";
                          require_once($pathCtrl);
                          $this->ctrl=new GestionnaireController();
-                         $this->ctrl->AddChambre()();
+                         $this->ctrl->index();
+                         ?>
+                            <script> alert("Veuillez saisir une page valide. Vous allez être rediriger vers la page d'acceuil."); </script>
+                         <?php
                         }
                         
                     }else{
                         $pathCtrl="./controllers/GestionnaireController.php";
                         require_once($pathCtrl);
                         $this->ctrl=new GestionnaireController();
-                        $this->ctrl->AddChambre()();
+                        $this->ctrl->index();
+                        ?>
+                            <script> alert("Veuillez saisir un URL valide. Vous allez être rediriger vers la page d'acceuil."); </script>
+                        <?php
                     }
              }else{
                 $pathCtrl="./controllers/GestionnaireController.php";
                 require_once($pathCtrl);
                 $this->ctrl=new GestionnaireController();
-                $this->ctrl->AddChambre();
+                $this->ctrl->index();
              }
              
         }catch(Exception $ex){
@@ -60,3 +66,4 @@ class Router{
        
     }
 }
+?>
