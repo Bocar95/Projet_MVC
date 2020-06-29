@@ -21,27 +21,3 @@ $(document).on('click','#supprimer',function () {
     }
 });
 
-
-// Fonction qui modifie
-$(document).on('click','#mdf', function() {
-
-    $(document).on('click','#modif', function() {
-        let numDep=$('#numDep').val();
-        let type=$('#type').val();
-        //let login=utilisateur.login;
-        $.ajax({
-            url:'modifierChambre',
-            type:'post',
-            data:{
-                numDep:numDep,
-                type:type,
-                idu:idu
-            },
-            dataType:'html',
-            success:function (data) {
-                    alert('Modification carried out successfully');
-            }
-        });
-    });
-
-});

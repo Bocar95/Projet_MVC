@@ -49,6 +49,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>            
 <script>
+
 $(document).ready(function(){
 
   $("#type").on("keyup", function() {
@@ -58,72 +59,11 @@ $(document).ready(function(){
     });
   });
 });
+
 </script>
 
             
 
-            <style>
+<style>
 
-
-.rechercher {
-    position: relative;
-    display: block;
-    width: 30%;
-    left: 3%;
-    padding: 0px;
-    margin-top: 1%;
-}
-
-.rechercher_label{
-    position: relative;
-    display: block;
-    color: black;
-    font-weight: bold;
-}
-
-.rechercher_input{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: 12px;
-    display: block;
-    color: black;
-    font-weight: bold;
-    border-radius: 4px 4px 4px 4px;
-}
-
-.container {
-    position: relative;
-    background-color: #FFFFFF;
-    margin: 1.5% auto;
-    padding: 0px;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
-}
-
-#scrollZone{
-    height: 380px;
-    overflow: scroll;
-}
-
-.text-center {
-    position: relative;
-    background-color: #38CA8D;
-    width: 100%;
-}
-
-/* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */ /* HOVER */
-
-.cadre:hover {
-    border-left: 7px solid #045c1e;
-    background-color: #689AE7;
-    position: relative;
-    width: 100%;
-    text-decoration: none;
-}
-
-
-
-
-            </style>
+</style>

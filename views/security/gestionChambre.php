@@ -36,42 +36,6 @@
 
 
 <!--   MODIFICATOIN   -->
-<div class="modal text-center" id="myModal">
-      <div class="modal-dialog">
-          <div class="modal-content">
-
-
-              <div class="modal-header">
-                  <h4 class="modal-title">Modify</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-
-
-              <div class="modal-body">
-                  <form>
-                      <div class="form-group">
-                          <input type="hidden" class="form-control" id="idU" name="idu">
-                      </div>
-                      <div class="form-group">
-                          <label for="fn">Numéro batiment</label>
-                          <input type="text" class="form-control" id="numDep" name="numDep">
-                      </div>
-                      <div class="form-group">
-                          <label for="ln">Type</label>
-                          <input type="text" class="form-control" id="type" name="type">
-                      </div>
-                  </form>
-              </div>
-
-
-              <div class="modal-footer">
-                  <button type="button"  class="btn btn-info" id="modif">Modify</button>
-
-              </div>
-
-          </div>
-      </div>
-  </div>
 
 
 
@@ -91,7 +55,7 @@
                 <a class="page-link" href="#">Suivant</a>
             </li>
         </ul>
-    </nav>            
+    </nav>          
 </div>
 
 

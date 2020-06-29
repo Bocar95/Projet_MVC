@@ -4,13 +4,13 @@
 
                 <div class="form-group">
                     <label for="batiment">Numéro de batiment</label>
-                    <input type="text" name="numDep" id="batiment" placeholder="00" class="form-control col-3">
+                    <input type="text" name="numDep" id="batiment" placeholder="00">
                     <small class="error-form" id="error_numero"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="type">Type</label>
-                        <select name="type" id="type" class="form-control col-3">
+                        <select name="type" id="type">
                             <option value="" selected></option>
                             <option name="individuel" value="individuel" id="individuel">Individuel</option>
                             <option name="a_deux" value="a_deux" id="a_deux">A deux</option>
