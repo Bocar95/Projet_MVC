@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 29 juin 2020 à 17:48
+-- Généré le :  lun. 29 juin 2020 à 23:58
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.4.0
 
@@ -35,20 +35,19 @@ CREATE TABLE IF NOT EXISTS `chambre` (
   `numDep` int(10) NOT NULL,
   `type` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `chambre`
 --
 
 INSERT INTO `chambre` (`id`, `numCham`, `numDep`, `type`) VALUES
-(11, '005-6988', 5, 'individuel'),
 (12, '001-8145', 1, 'a_deux'),
 (13, '006-8674', 6, 'a_deux'),
 (14, '002-8647', 2, 'individuel'),
 (15, '006-5273', 6, 'individuel'),
 (16, '005-7113', 5, 'individuel'),
-(19, '007-3053', 7, 'individuel');
+(21, '007-5646', 7, 'a_deux');
 
 -- --------------------------------------------------------
 

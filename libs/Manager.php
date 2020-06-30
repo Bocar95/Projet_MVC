@@ -10,7 +10,7 @@
             //Connexion est fermée
             if($this->pdo==null){
                 try{
-                  $this->pdo = new PDO("mysql:host=localhost;dbname=allocation",'root', '');
+                  $this->pdo = new PDO("mysql:host=mysql-bocar.alwaysdata.net;dbname=bocar_allocation",'bocar', 'KUdjbG@smQ8wSUR');
 
                   $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
                 }catch(PDOException $ex){
